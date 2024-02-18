@@ -16,6 +16,8 @@
 		4EA2C6CB2B80597800837674 /* WeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2C6CA2B80597800837674 /* WeatherUITestsLaunchTests.swift */; };
 		4EA2C6DF2B805E6B00837674 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2C6DE2B805E6B00837674 /* Extensions.swift */; };
 		4EA2C6E12B819EBC00837674 /* Homeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2C6E02B819EBC00837674 /* Homeview.swift */; };
+		4EA2C6E32B82935300837674 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2C6E22B82935300837674 /* TabBar.swift */; };
+		4EA2C6E52B82992C00837674 /* shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2C6E42B82992C00837674 /* shapes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		4EA2C6CA2B80597800837674 /* WeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4EA2C6DE2B805E6B00837674 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4EA2C6E02B819EBC00837674 /* Homeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeview.swift; sourceTree = "<group>"; };
+		4EA2C6E22B82935300837674 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		4EA2C6E42B82992C00837674 /* shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shapes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				4EA2C6DE2B805E6B00837674 /* Extensions.swift */,
+				4EA2C6E42B82992C00837674 /* shapes.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 		4EA2C6DB2B805CEF00837674 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				4EA2C6E22B82935300837674 /* TabBar.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -324,7 +330,9 @@
 				4EA2C6AF2B80597600837674 /* ContentView.swift in Sources */,
 				4EA2C6E12B819EBC00837674 /* Homeview.swift in Sources */,
 				4EA2C6DF2B805E6B00837674 /* Extensions.swift in Sources */,
+				4EA2C6E52B82992C00837674 /* shapes.swift in Sources */,
 				4EA2C6AD2B80597600837674 /* WeatherApp.swift in Sources */,
+				4EA2C6E32B82935300837674 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
