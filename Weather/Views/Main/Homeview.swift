@@ -6,9 +6,22 @@
 //
 
 import SwiftUI
+import BottomSheet
+
+enum BottomSheetPosition: CGFloat, CaseIterable{
+    case top = 0.83
+    case middle = 0.385
+}
+
 
 struct Homeview: View {
+//    @State var bottomSheetPosition: BottomSheetPosition = .middle
+    
+    @State var isPresented = true
+    @State var selectedDetent: BottomSheet.PresentationDetent = .medium
+    
     var body: some View {
+        
         NavigationView {
             ZStack{
                 // MARK: Main Background Color
@@ -41,9 +54,30 @@ struct Homeview: View {
                 }
                 .padding(.top, 51)
                 
-                //MARK: tab bar
+                // MARK: Bottom Sheet
+                .sheetPlus(
+                    isPresented: $isPresented,
+                    background: (
+                        RoundedRectangle(cornerRadius: 44)
+                            .fill(Color.background.opacity(0.44))
+                    ),
+                    header: {
+                        EmptyView()                    },
+                    main: {
+                        ForecastView()
+                            .presentationDetentsPlus(
+                                [.height(244), .fraction(0.4), .medium, .large],
+                                selection: $selectedDetent
+                            )
+//                            .presentationDragIndicatorPlus(.visible)
+                    }
+                )
                 
-                TabBar(action: {})
+                // MARK: tab bar
+                
+                TabBar(action: {
+                    isPresented.toggle()
+                })
             }
             .navigationBarHidden(true)
         }
