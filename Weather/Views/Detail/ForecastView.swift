@@ -6,14 +6,51 @@
 //
 
 import SwiftUI
+import BottomSheet
 
 struct ForecastView: View {
+    var isPresented: Bool
+    @State private var selection = 0
+    
     var body: some View {
         ScrollView {
+            VStack(spacing: 20) {
+                // MARK: Segmented Control
+                SegmentedControl(selection: $selection)
+            }
+            // MARK: Forecast Cards
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 12) {
+                    if selection == 0 {
+                        ForEach(Forecast.hourly) { forecast in
+                            ForecastCard(forecast: forecast, forecastPeriod: .hourly)
+                        }
+                        .transition(.offset(x: -430))
+                    } else {
+                        ForEach(Forecast.daily) { forecast in
+                            ForecastCard(forecast: forecast, forecastPeriod: .daily)
+                        }
+                        .transition(.offset(x: 430))
+                    }
+                }
+                .padding(.vertical, 20)
+            }
+            .padding(.horizontal, 20)
+            if isPresented{
+                Image("Forecast Widgets")
+                    .opacity(1)
+            } else {
+                Image("Forecast Widgets")
+                    .opacity(0)
+            }
+            // MARK: Forecast Widgets
             
         }
+//        .blur(radius: 25, opaque: true)
+//        .background(Blur(radius: 25, opaque: true))
 //        .background(Color.bottomSheetBackground)
-        .clipShape(RoundedRectangle(cornerRadius: 100))
+        .clipShape(RoundedRectangle(cornerRadius: 44))
+        
         .overlay {
             // MARK: Bottom Sheet Separator
             Divider()
@@ -35,7 +72,7 @@ struct ForecastView: View {
 
 struct ForecastView_Previews: PreviewProvider {
     static var previews: some View {
-        ForecastView()
+        ForecastView(isPresented: false)
             .background(Color.background)
             .preferredColorScheme(.dark)
     }
