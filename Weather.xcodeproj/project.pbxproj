@@ -26,6 +26,7 @@
 		4EA2C6F22B85A01E00837674 /* ForecastCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2C6F12B85A01E00837674 /* ForecastCard.swift */; };
 		4EA2C6F42B85A95300837674 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2C6F32B85A95300837674 /* NavigationBar.swift */; };
 		4EA2C6F62B85A9C700837674 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2C6F52B85A9C700837674 /* WeatherView.swift */; };
+		4EA2C6F82B85AA9400837674 /* WeatherWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA2C6F72B85AA9400837674 /* WeatherWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		4EA2C6F12B85A01E00837674 /* ForecastCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCard.swift; sourceTree = "<group>"; };
 		4EA2C6F32B85A95300837674 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		4EA2C6F52B85A9C700837674 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		4EA2C6F72B85AA9400837674 /* WeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 				4EA2C6EB2B84FDE300837674 /* Blur.swift */,
 				4EA2C6ED2B859A8F00837674 /* SegmentedControl.swift */,
 				4EA2C6F12B85A01E00837674 /* ForecastCard.swift */,
+				4EA2C6F72B85AA9400837674 /* WeatherWidget.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA2C6F82B85AA9400837674 /* WeatherWidget.swift in Sources */,
 				4EA2C6F22B85A01E00837674 /* ForecastCard.swift in Sources */,
 				4EA2C6EA2B82AED400837674 /* ForecastView.swift in Sources */,
 				4EA2C6EE2B859A8F00837674 /* SegmentedControl.swift in Sources */,
